@@ -1,0 +1,226 @@
+body {
+	background-color: #DEB887;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	font-family: "Serif", Times New Roman;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    max-width: 900px; 
+    height: 1150px; 
+    background-color: #ffffff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+}
+
+.left-panel {
+    width: 40%; 
+    background-color: #696969; 
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; 
+}
+
+.photo-panel {
+    height: 50%; 
+    background-image: url('EmmaPhoto.jpg'); 
+    background-size: cover; 
+    background-position: right; 
+    background-repeat: no-repeat; 
+    border-top-left-radius: 10px;
+}
+
+.text-content {
+    height: 50%; 
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nameSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nameSection button {
+    height: 17%;
+    border-radius: 4px;
+    border: none;
+    background-color: white;
+    margin-left: 10px;
+    margin-top: 14%;
+}
+
+.nameSection button:hover {
+    transform: scale(1.1);
+}
+
+.about-me h2 {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 3%;
+}
+
+.about-me p {
+    font-size: 1em;
+    color: white;
+    line-height: 1.6;
+}
+
+.contact-info h2 {
+    font-size: 1.5em;
+    color: white;
+    margin-top: 10%;
+    margin-bottom: 8px;
+}
+
+.contact-info p {
+    font-size: 1em;
+    color: white;
+    margin-bottom: 6px;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #0073e6;
+    text-decoration: underline;
+}
+
+.nccu-icon img {
+    width: 45%;
+    height: auto;
+    display: block;
+    margin: 20px auto 0;
+}
+
+
+
+
+/* Right panel */
+.right-panel {
+    width: 60%;
+    padding: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: gray;
+    /*align-items: left;*/
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.section {
+    margin-bottom: 50px;
+    /*padding-left: 2%;*/
+    border-bottom: 2px;
+}
+
+.section h2 {
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.year {
+	text-align: left;
+}
+
+.homework-list ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.homework-list li {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.homework-list a {
+    text-decoration: none; 
+    color: gray; 
+}
+
+.homework-list a:hover {
+    color: peachpuff; 
+}
+
+
+
+.album-covers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-top: 20px;
+}
+
+.song {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.album-covers p a {
+    display: block;
+    align-items: center;
+    font-family: "Sans-serif", Verdana;
+}
+
+.album-covers img {
+    width: 30%; 
+    height: 30%; 
+    object-fit: cover; 
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    align-items: center;
+}
+
+.album-covers img:hover {
+    transform: scale(1.1);
+}
+
+.note {
+    font-size: 0.9em;
+    color: #777;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+/* Make sure the layout is responsive */
+@media (max-width: 900px) {
+    .main-container {
+        height: auto; /* Adjust the height dynamically */
+    }
+    .left-panel, .right-panel {
+        width: 100%; /* Each panel will take full width on smaller screens */
+    }
+
+    .album-covers {
+        flex-wrap: wrap; /* Allow album covers to stack if space is limited */
+        justify-content: center; /* Center align the items in the row */
+    }
+
+    .album-covers img {
+        width: 100px; /* Resize images on smaller screens */
+        height: 100px;
+        margin-bottom: 10px; /* Space between images */
+    }
+}

@@ -16,14 +16,6 @@ function edit() {
 }
 
 
-/*var addMusicBtn = document.getElementById("addMusicBtn");
-addMusicBtn.addEventListener("click", addMusic);
-
-function addMusic() {
-
-}*/
-
-
 var addMusicBtn = document.getElementById("addMusicBtn");
 addMusicBtn.addEventListener("click", showForm);
 

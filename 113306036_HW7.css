@@ -29,7 +29,7 @@ body {
 
 .photo-panel {
     height: 50%; 
-    background-image: url('EmmaPhoto.jpg'); 
+    background-image: url("EmmaPhoto.jpg");
     background-size: cover; 
     background-position: right; 
     background-repeat: no-repeat; 
